@@ -3,7 +3,9 @@ using WebShop.WebApi.Dtos.Auth;
 
 namespace WebShop.WebApi.Controllers
 {
-    public class AuthController : Controller
+    [Route("api/[controller]")]
+    [ApiController]
+    public class AuthController : ControllerBase
     {
         [HttpPost]
         public ActionResult<TokenDto> Login([FromBody] LoginDto login)

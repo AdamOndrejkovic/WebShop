@@ -31,6 +31,16 @@ namespace WebShop.WebApi
             {
                 c.SwaggerDoc("v1", new OpenApiInfo {Title = "WebShop.WebApi", Version = "v1"});
             });
+            services.AddCors(options =>
+            {
+                options.AddPolicy("dev-cors", builder =>
+                {
+                    builder
+                        .AllowAnyOrigin()
+                        .AllowAnyHeader()
+                        .AllowAnyMethod();
+                });
+            });
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
@@ -41,6 +51,7 @@ namespace WebShop.WebApi
                 app.UseDeveloperExceptionPage();
                 app.UseSwagger();
                 app.UseSwaggerUI(c => c.SwaggerEndpoint("/swagger/v1/swagger.json", "WebShop.WebApi v1"));
+                app.UseCors("dev-cors");
             }
 
             app.UseHttpsRedirection();
