@@ -6,11 +6,17 @@ using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.HttpsPolicy;
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using Microsoft.Extensions.Logging;
 using Microsoft.OpenApi.Models;
+using WebShop.Core.IServices;
+using WebShop.DB;
+using WebShop.DB.Repositories;
+using WebShop.Domain.IRepository;
+using WebShop.Domain.Services;
 
 namespace WebShop.WebApi
 {
@@ -41,6 +47,23 @@ namespace WebShop.WebApi
                         .AllowAnyMethod();
                 });
             });
+            
+            var loggerFactory = LoggerFactory.Create(builder =>
+            {
+                builder.AddConsole();
+            });
+
+            
+            services.AddDbContext<WebShopContext>(
+                opt =>
+                {
+                    opt.UseLoggerFactory(loggerFactory)
+                        .UseSqlite("Data Source=petShop.db");
+                }, ServiceLifetime.Transient
+            );
+
+            services.AddScoped<IProductService, ProductService>();
+            services.AddScoped<IProductRepository, ProductRepository>();
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.

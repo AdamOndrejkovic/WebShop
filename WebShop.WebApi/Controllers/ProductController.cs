@@ -2,6 +2,7 @@
 using Microsoft.AspNetCore.Mvc;
 using WebShop.Core;
 using WebShop.Core.IServices;
+using WebShop.WebApi.Dtos.Product;
 
 namespace WebShop.WebApi.Controllers
 {
@@ -17,16 +18,16 @@ namespace WebShop.WebApi.Controllers
         }
         
         [HttpGet]
-        public ActionResult<IEnumerable<Product>> GetOwners()
+        public ActionResult<FilteredListDto> GetAll()
         {
-            var products = _productService.GetOwners();
-            if (products != null)
+            var filteredList = new FilteredListDto();
+            filteredList.List = new List<ProductDto>()
             {
-                //Ask about
-                return new ActionResult<IEnumerable<Product>>(products);
-            }
-
-            return BadRequest("No owners were found");
+                new ProductDto(){Id =1, Name = "Bricks"},
+                new ProductDto(){Id =2, Name = "Jelly"},
+                new ProductDto(){Id =3, Name = "Hamburger"},
+            };
+            return filteredList;
         }
     }
 }

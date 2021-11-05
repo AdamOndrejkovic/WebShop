@@ -9,11 +9,8 @@
     </ItemGroup>
 
     <ItemGroup>
-      <Folder Include="Dtos\Product" />
-    </ItemGroup>
-
-    <ItemGroup>
       <ProjectReference Include="..\WebShop.Core\WebShop.Core.csproj" />
+      <ProjectReference Include="..\WebShop.DB\WebShop.DB.csproj" />
     </ItemGroup>
 
 </Project>

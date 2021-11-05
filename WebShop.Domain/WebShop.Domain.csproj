@@ -5,10 +5,6 @@
     </PropertyGroup>
 
     <ItemGroup>
-      <Folder Include="IRepository" />
-    </ItemGroup>
-
-    <ItemGroup>
       <ProjectReference Include="..\WebShop.Core\WebShop.Core.csproj" />
     </ItemGroup>
 
