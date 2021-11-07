@@ -1,6 +1,8 @@
 ﻿using System.Collections.Generic;
+using System.IO;
 using System.Linq;
 using WebShop.Core;
+using WebShop.Core.Models;
 using WebShop.Domain.IRepository;
 
 namespace WebShop.DB.Repositories
@@ -11,10 +13,10 @@ namespace WebShop.DB.Repositories
 
         public ProductRepository(WebShopContext context)
         {
-            _context = context;
+            _context = context ?? throw new InvalidDataException("Product Repository must have a DBContext in constructor");
         }
         
-        public List<Product> GetProducts()
+        public FilteredList GetProducts()
         {
             var selectQuery = _context.Products
                 .Select(productEntity => new Product()
@@ -23,7 +25,9 @@ namespace WebShop.DB.Repositories
                     Name = productEntity.Name,
                 });
 
-            return selectQuery.ToList();
+            var filteredList = new FilteredList();
+            filteredList.List = selectQuery.ToList();
+            return filteredList;
         }
     }
 }

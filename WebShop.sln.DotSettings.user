@@ -8,4 +8,13 @@
     &lt;TestId&gt;xUnit::66021B43-06CD-41EB-BB61-E11BBE5E75D2::net5.0::WebShop.Core.Test.IServices.InterfaceProductServiceTest&lt;/TestId&gt;&#xD;
     &lt;TestId&gt;xUnit::66021B43-06CD-41EB-BB61-E11BBE5E75D2::net5.0::WebShop.Core.Test.Models.FilteredListTest&lt;/TestId&gt;&#xD;
   &lt;/TestAncestor&gt;&#xD;
+&lt;/SessionState&gt;</s:String>
+	<s:String x:Key="/Default/Environment/UnitTesting/UnitTestSessionStore/Sessions/=8f0eb8c1_002Df609_002D404a_002Da874_002Db9dbd5109efd/@EntryIndexedValue">&lt;SessionState ContinuousTestingMode="0" IsActive="True" Name="ProductServiceTest" xmlns="urn:schemas-jetbrains-com:jetbrains-ut-session"&gt;&#xD;
+  &lt;TestAncestor&gt;&#xD;
+    &lt;TestId&gt;xUnit::279FB1E8-7ED1-4BDD-8821-4FF24BC0D845::net5.0::WebShop.Domain.Test.ProductServiceTest&lt;/TestId&gt;&#xD;
+    &lt;TestId&gt;xUnit::546BC505-7AE3-4328-8B21-81E767620D7D::net5.0::WebShop.Infrastructure.Test.MainDbContextTest.DbContext_WithDbContextOptions_IsAvailable&lt;/TestId&gt;&#xD;
+    &lt;TestId&gt;xUnit::546BC505-7AE3-4328-8B21-81E767620D7D::net5.0::WebShop.Infrastructure.Test.MainDbContextTest.DbContext_DbSets_MustHaveDbSetWithTypeProduct&lt;/TestId&gt;&#xD;
+    &lt;TestId&gt;xUnit::546BC505-7AE3-4328-8B21-81E767620D7D::net5.0::WebShop.Infrastructure.Test.MainDbContextTest&lt;/TestId&gt;&#xD;
+    &lt;TestId&gt;xUnit::546BC505-7AE3-4328-8B21-81E767620D7D::net5.0::WebShop.Infrastructure.Test.ProductRepositoryTest&lt;/TestId&gt;&#xD;
+  &lt;/TestAncestor&gt;&#xD;
 &lt;/SessionState&gt;</s:String></wpf:ResourceDictionary>
