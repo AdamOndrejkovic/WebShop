@@ -1,0 +1,11 @@
+﻿<wpf:ResourceDictionary xml:space="preserve" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:s="clr-namespace:System;assembly=mscorlib" xmlns:ss="urn:shemas-jetbrains-com:settings-storage-xaml" xmlns:wpf="http://schemas.microsoft.com/winfx/2006/xaml/presentation">
+	<s:String x:Key="/Default/Environment/UnitTesting/UnitTestSessionStore/Sessions/=5b1a2da9_002Dd567_002D4921_002D805f_002D1b14e60e5425/@EntryIndexedValue">&lt;SessionState ContinuousTestingMode="0" IsActive="True" Name="ProductClassExists" xmlns="urn:schemas-jetbrains-com:jetbrains-ut-session"&gt;&#xD;
+  &lt;TestAncestor&gt;&#xD;
+    &lt;TestId&gt;xUnit::66021B43-06CD-41EB-BB61-E11BBE5E75D2::net5.0::WebShop.Core.Test.Models.ProductTest.ProductClass_Exists&lt;/TestId&gt;&#xD;
+    &lt;TestId&gt;xUnit::66021B43-06CD-41EB-BB61-E11BBE5E75D2::net5.0::WebShop.Core.Test.Models.ProductTest.ProductClass_HasId_WithTypeInt&lt;/TestId&gt;&#xD;
+    &lt;TestId&gt;xUnit::66021B43-06CD-41EB-BB61-E11BBE5E75D2::net5.0::WebShop.Core.Test.Models.ProductTest.ProductClass_HasName_WithTypeInt&lt;/TestId&gt;&#xD;
+    &lt;TestId&gt;xUnit::66021B43-06CD-41EB-BB61-E11BBE5E75D2::net5.0::WebShop.Core.Test.Models.ProductTest.Equals_WithProductWithSameProperties_ReturnTrue&lt;/TestId&gt;&#xD;
+    &lt;TestId&gt;xUnit::66021B43-06CD-41EB-BB61-E11BBE5E75D2::net5.0::WebShop.Core.Test.IServices.InterfaceProductServiceTest&lt;/TestId&gt;&#xD;
+    &lt;TestId&gt;xUnit::66021B43-06CD-41EB-BB61-E11BBE5E75D2::net5.0::WebShop.Core.Test.Models.FilteredListTest&lt;/TestId&gt;&#xD;
+  &lt;/TestAncestor&gt;&#xD;
+&lt;/SessionState&gt;</s:String></wpf:ResourceDictionary>
